@@ -1,0 +1,324 @@
+/* General */
+@import url(reset.css);
+:root {--color: #0095F6;}  /* #E94C07 #F57B71    #3366FF   #000066  #C0963D  #F6AA00   #3488A2  #BE6361  #0095F6 */
+hr{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+
+}
+
+/* General  class*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.circle{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 15px 0;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+.line{
+    line-height: 10px;
+}
+.line-1 , .line-2 , .line-3{
+    display: inline-block;
+    background-color: var(--color);
+}
+.line-1{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}
+
+.line-2{
+    width: 60px;
+    height: 1px;
+}
+
+.line-3{
+    width: 80px;
+    height: 1px;
+}
+.btn{
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--color);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: background-color .08s;
+}
+.btn:hover{
+    background-color: var(--color);
+
+}
+.read-moore{
+    margin: 15px 0;
+}
+/* Header  */
+header{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    background:  url(../img/favpng_euclidean-vector-icon.png)  center right/contain no-repeat;
+
+}
+.logo{
+    width: 200px;
+    height: 40px;
+    margin-top: 50px;
+    color: var(--color);
+}
+.header-content{
+    max-width: 450px;
+    margin: 50px 0;
+}
+.header-h1{
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+/* .header-p{
+
+} */
+
+/* Side Nav */
+#sideNav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.7s;
+}
+#sideNav ul li{
+    margin: 40px;
+    padding: 5px;
+}
+#sideNav ul li:first-child{
+    margin-top: 100px;
+}
+#sideNav ul li a{
+    color: #fff;
+}
+#menuBtn{
+    width: 50px;
+    position: fixed;
+    right: 15px;
+    top: 40px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* About Us and Offer */  /* and*/  
+ /******** Courses us *******/ 
+ /******** OFFER us *******/
+ /******** CONTACT us *******/
+
+#about-us , #courses-us , #offer-us , #contact-us{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 70px 0;
+}
+
+.about-left , .about-right , .courses-left , .courses-right , .offer-left , .offer-right , .contact-left , .contact-right  {
+flex-basis: 50%;
+}
+.about-left img , .courses-right img ,  .offer-right img  , .contact-right img{
+    border-radius: 50px;
+}
+.about-content , .courses-content , .offer-content , .contact-content{
+    margin-top: 40px;
+    max-width: 600px;
+    display: inline-block;
+}
+.about-content h2 {
+    font-weight: 500;
+    font-style: italic;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.about-content h3{
+    color: var(--color);
+    font-style: italic;
+    margin: 20px 0;
+    text-align: right;
+}
+
+/* Features */
+#features{
+    padding: 20px 0;
+}
+.features-row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.features-col{
+    flex-basis: 30%;
+    padding: 20px;
+}
+.features-col img{
+    width: 100px;
+    height: 100px;
+}
+.features-col h2{
+    color: var(--color);
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+/* .features-col p{
+
+} */
+.features-btn{
+   text-align: center;
+}
+
+/* Courses and Contact */
+.contact-content h1{
+    margin: 20px 0; 
+    text-align: center;
+}
+.btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box .btn {
+    margin: 0 10px;
+}
+
+
+/* Footer */
+#footer{
+    margin: 30px 0;
+    text-align: center;
+}
+.footer-row  , .footer-nav, .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-left{
+    flex-basis: 30%;
+
+}
+.footer-right{
+    flex-basis: 70%;
+    margin-top: 50px;
+}
+.footer-link h4{
+    margin-bottom: 15px;
+    color: var(--color);
+}
+.copyright small , .footer-link small{
+    display: block;
+    font-size: 14px;
+    color: var(--color);
+    line-height: 25px;
+}
+.copyright img {
+    display: block;
+    /* width: 200px; */
+    margin: 40px 0;
+}
+/* Social Icons */
+
+.social-icon{
+    position: fixed;
+    top: 33%;
+    left: 0;
+    z-index: 1 ;
+}
+.social-icon a{
+    display: block;
+  
+    cursor: pointer;
+    font-size: 22px;
+    color: #000
+}
+.social-icon a:hover{
+    transform: scale(1.5);
+    transition: 0.8s;
+}
+
+/* Responsive */
+@media only screen and (max-width:700px) {
+
+/* General */
+
+/* General  class*/
+h1{
+    font-size: 22px;
+}
+.btn{
+    padding: 10px 15px;
+}
+.container{
+    margin: 0 45px;
+}
+/* Header  */
+
+#header{
+    height: 75vh;
+    background: none;
+}
+#sideNav{
+    max-width: 160px;
+}
+
+/* About Us and Offer */
+.about-left , .about-right , .courses-left , .courses-right , .offer-left , .offer-right , .contact-left , .contact-right  {
+    flex-basis: 100%;
+    margin-top: 50px;
+}
+
+
+
+.about-left , .about-right , .courses-left , .courses-right , .offer-left , .offer-right , .contact-left , .contact-right  , .footer-left , .footer-right{
+     flex-basis: 100%;
+}
+/* Features */
+.features-row{
+    width: 100%;
+}
+.features-col{
+    flex-basis: 100%;
+}
+
+.footer-link{
+    flex-basis: 50%;
+}
+/* Courses and Contact */
+.contact-right img  , .courses-right img {
+    display: none;
+}
+
+/* Footer */
+
+/* Social Icons */
+
+    
+}
+/* Responsive */
